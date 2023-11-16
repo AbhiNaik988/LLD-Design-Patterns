@@ -1,7 +1,7 @@
 package Design_Patterns.Creational_Patterns.Singleton_Pattern;
 
 public class CarMulti {
-    private static CarMulti carMulti = null;
+    private static volatile CarMulti carMulti = null;
     private CarMulti(){
         System.out.println("car created!");
     }
