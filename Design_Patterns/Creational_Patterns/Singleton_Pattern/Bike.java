@@ -1,7 +1,7 @@
 package Design_Patterns.Creational_Patterns.Singleton_Pattern;
 
 public class Bike {
-    private static Bike bike = null;
+    private static volatile Bike bike = null;
     private Bike(){
         System.out.println("bike created!");
     }
